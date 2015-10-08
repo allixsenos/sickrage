@@ -1,5 +1,5 @@
 FROM phusion/baseimage:0.9.16
-MAINTAINER okachobi<okachobi@gmail.com>
+MAINTAINER allixsenos<docker@allixsenos.net>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Set correct environment variables
