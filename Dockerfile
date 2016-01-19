@@ -19,7 +19,7 @@ add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ vivid main restricted"
 apt-get update -q && \
 
 # Install Dependencies - pull Python 2.7.9 from vivid APT repo
-apt-get -t vivid install -qy python2.7 python-cheetah && \
+apt-get -t vivid install -qy python2.7 python-cheetah python-pip && \
 apt-get install -qy ca-certificates wget unrar unzip && \
 
 # Install SickRage master
