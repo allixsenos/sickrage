@@ -12,9 +12,9 @@ CMD ["/sbin/my_init"]
 RUN usermod -u 99 nobody && \
 usermod -g 100 nobody && \
 
-add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe multiverse" && \
-add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates universe multiverse" && \
-add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ utopic main restricted" && \
+add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ wily universe multiverse" && \
+add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ wily-updates universe multiverse" && \
+add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ wily main restricted" && \
 add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ vivid main restricted" && \
 apt-get update -q && \
 
