@@ -12,14 +12,13 @@ CMD ["/sbin/my_init"]
 RUN usermod -u 99 nobody && \
 usermod -g 100 nobody && \
 
-add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ wily universe multiverse" && \
-add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ wily-updates universe multiverse" && \
-add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ wily main restricted" && \
+add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ vivid universe multiverse" && \
+add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ vivid-updates universe multiverse" && \
 add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ vivid main restricted" && \
 apt-get update -q && \
 
 # Install Dependencies - pull Python 2.7.9 from vivid APT repo
-apt-get -t vivid install -qy python2.7 python-cheetah python-pip && \
+apt-get install -qy python2.7 python-cheetah python-pip && \
 apt-get install -qy ca-certificates wget unrar unzip && \
 
 # Install SickRage master
